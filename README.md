@@ -6,6 +6,6 @@ Steps
 
 2. export BLUESKY_PASSWORD="mySecretPassword"
 
-3. tsc
+3. npx tsc
 
 4. node ./dist/index.js
