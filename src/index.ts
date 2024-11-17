@@ -4,10 +4,13 @@ const agent = new AtpAgent({
   service: 'https://bsky.social'
 })
 
-await agent.login({
+const loginResult = await agent.login({
   identifier: 'patrick.j.holmes@gmail.com',
   password: process.env.BLUESKY_PASSWORD
 })
+
+console.log("Login result:")
+console.log(JSON.stringify(loginResult, null, 2))
 
 // post a message
 
@@ -28,6 +31,7 @@ await agent.login({
 // get a user's profile
 
 const { data } = await agent.getProfile({ actor: 'did:plc:5k7u2ygbcigv2v62nawsuxsa' })
+console.log("getProfile result:")
 console.log(JSON.stringify(data, null, 2))
 
 // the end
