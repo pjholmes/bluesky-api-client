@@ -8,4 +8,6 @@ Steps
 
 3. npx tsc
 
+> Note: (I got 3 errors messages)
+
 4. node ./dist/index.js
