@@ -3,11 +3,13 @@
 Steps
 
 1. npm install
+   
+2. Chnage the code in intex.ts to login with your identifier
 
-2. export BLUESKY_PASSWORD="mySecretPassword"
+3. export BLUESKY_PASSWORD="mySecretPassword"
 
-3. npx tsc
+4. npx tsc
 
-> Note: (I got 3 errors messages)
+> Note: (I got 3 errors messages but still get expected results at runtime)
 
-4. node ./dist/index.js
+5. node ./dist/index.js
